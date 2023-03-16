@@ -1,11 +1,11 @@
-## Project "Text index"
+# Text index
 
 This program works with files in .txt format, composes an index of the text file and responds to user requests.  
 
 Text files consist of lines, lines are collected into pages 
 (each page contains exactly 45 lines, blank lines are not counted).
 
-#### Description of correct format of input data:
+### Description of correct format of input data:
 
 1. **Filename**
     * one file in .txt format
@@ -15,10 +15,9 @@ Text files consist of lines, lines are collected into pages
 3. **Request**
     * correct input data (see **Correct input data** for selected request)
     
-- There must be separators (one space) between 1, 2 and 3 inputs.
+- There must be separators (one space) between 1, 2 and 3 inputs. 
 
-                                                                                                                                                                                                                                                                                              
-#### Types of requests:
+### Types of requests:
 
 1. Compilation of an index for a given file in txt format.  
     **Correct input data**: nothing  
@@ -38,7 +37,7 @@ Text files consist of lines, lines are collected into pages
 3. Displays all lines containing the specified word (in any of the word forms).  
     **Correct input data**: one word in Russian in initial form
 
-#### Output (displayed on the screen)
+### Output
 
 1. Compilation of an index for a given file in txt format.  
     **Output**:
@@ -71,7 +70,8 @@ Text files consist of lines, lines are collected into pages
     **Output**: lines containing the specified word, separated by blank lines.
 
    
-#### Example
+### Example
+
 ````bash
 $ ./gradlew run --args="data/MyText.txt 2 плакать"
 
@@ -79,6 +79,4 @@ Word: плакать
 Number of occurrences: 1
 Used word forms: плакать
 Page numbers: 1
-
 ````
-
